@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/quantum_grey100"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/outline_arrow_back_black_24"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StayHereRegularSmall"
+            android:text="Payment Collections"
+            android:textSize="17dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlClientDetails"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/shadow_background"
+        android:orientation="vertical"
+        android:shadowColor="#000"
+        android:shadowDx="0"
+        android:shadowDy="30"
+        android:shadowRadius="50">
+
+        <RelativeLayout
+            android:id="@+id/llpic"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/imgUserIcon"
+            >
+
+            <TextView
+                android:id="@+id/txtCustomerName"
+                style="@style/StayHereRegularSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member Number"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtCustomerNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SKY200300"
+                android:textColor="@color/skylers_blue"
+                android:layout_below="@+id/txtCustomerName"
+                android:textStyle="bold"
+                style="@style/StayHereRegularSmall"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/quantum_grey800"
+                android:textSize="15dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="2.9dp"
+                android:text="Select Product"
+                android:layout_below="@+id/txtCustomerNumber"
+                style="@style/StayHereRegularSmall"
+                />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spnGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:padding="2dp"
+                android:text="Education"
+                android:layout_below="@+id/text"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/quantum_grey800"
+                android:textColorHint="@color/quantum_grey400"
+                android:textSize="16sp"
+                app:met_floatingLabel="none" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spnGender"
+                android:layout_marginTop="8dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Amount"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:textColorHint="@color/quantum_grey100"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/txtSubmit"
+                style="@style/StayHereRegularSmall"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circular_edges_filled"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Collect Payment"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        style="@style/StayHereRegularSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Transactions"
+        android:layout_margin="6dp"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+</LinearLayout>

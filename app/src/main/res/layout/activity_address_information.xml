@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/outline_arrow_back_black_24" />
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imgBack"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address Information"
+            android:layout_marginLeft="12dp"
+            style="@style/Bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/quantum_grey900"
+            android:textSize="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="2.9dp"
+            style="@style/StayHereRegularSmall"
+            android:text="Here, you capture client's address information and occupation details"
+            />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Address"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:textColorHint="@color/quantum_grey100"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/quantum_grey800"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="2.9dp"
+                android:text="Select Country"
+                style="@style/StayHereRegularSmall"
+                />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spnCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:padding="2dp"
+                android:text="country"
+                android:layout_margin="10dp"
+                android:textColor="@color/quantum_grey800"
+                android:textColorHint="@color/quantum_grey400"
+                android:textSize="16sp"
+                app:met_floatingLabel="none" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/quantum_grey800"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="2.9dp"
+                android:text="Select Occupation"
+                style="@style/StayHereRegularSmall"
+                />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spnOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:padding="2dp"
+                android:text="work"
+                android:layout_margin="10dp"
+                android:textColor="@color/quantum_grey800"
+                android:textColorHint="@color/quantum_grey400"
+                android:textSize="16sp"
+                app:met_floatingLabel="none" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtSubmit"
+        style="@style/StayHereRegularSmall"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/circular_edges_filled"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

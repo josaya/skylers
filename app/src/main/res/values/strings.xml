@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Skylers</string>
+
+    <string name="lbl_set_profile_photo">Client Photo</string>
+    <string name="lbl_take_camera_picture">Take photo</string>
+    <string name="toast_image_intent_null">Intent null</string>
+</resources>

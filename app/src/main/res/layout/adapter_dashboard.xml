@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_floor_plan"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        card_view:cardCornerRadius="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        card_view:cardElevation="8dp"
+        android:layout_below="@+id/rlAgentDetails">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_loan"
+                android:layout_margin="8dp"
+                />
+
+            <TextView
+                android:id="@+id/txtProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan"
+                style="@style/StayHereRegularSmall"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtProductPerformance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="20 Loans issued"
+                style="@style/StayHereRegularSmall"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/quantum_grey900"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgArrow"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_arrow_up"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-3dp"
+                    android:text="60% increase"
+                    android:textSize="14dp"
+                    style="@style/StayHereRegularSmall"
+                    android:textColor="@color/quantum_grey900"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

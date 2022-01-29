@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey50"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_floor_plan"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_margin="8dp"
+                card_view:cardElevation="8dp"
+                android:layout_centerInParent="true">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/layout_block_edges">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/outline_person_outline_black_24"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/txtUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_toLeftOf="@+id/llVerify"
+                            android:hint="User Name"
+                            android:background="@null"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/quantum_grey600" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/layout_block_edges">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/outline_lock_black_24"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/txtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_toLeftOf="@+id/llVerify"
+                            android:hint="Password"
+                            android:background="@null"
+                            android:inputType="textPassword"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/quantum_grey600" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Login"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:clickable="true"
+                        style="@style/StayHereRegularSmall"
+                        android:textColor="@color/white"
+                        android:background="@drawable/circular_edges_filled"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

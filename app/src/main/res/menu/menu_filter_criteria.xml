@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_name"
+        android:orderInCategory="100"
+        android:title="Search by Name" />
+
+    <item
+        android:id="@+id/action_phone_number"
+        android:orderInCategory="101"
+        android:title="Search by Phone Number" />
+
+    <item
+        android:id="@+id/action_id_number"
+        android:orderInCategory="103"
+        android:title="Search by ID Number" />
+    <item
+        android:id="@+id/action_account_number"
+        android:orderInCategory="102"
+        android:title="Search by Account Number" />
+
+</menu>
